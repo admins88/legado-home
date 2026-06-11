@@ -1,4 +1,12 @@
 {
-  "latest": "1.0.0",
-  "releases": []
+  "latest": "1.0.1",
+  "releases": [
+    {
+      "version": "1.0.1",
+      "publishedAt": "2026-06-11T10:57:05.899Z",
+      "url": "https://admins88.github.io/legado-home/releases/1.0.1/update.zip",
+      "sigUrl": "https://admins88.github.io/legado-home/releases/1.0.1/update.zip.sig",
+      "changelog": "测试后台一键升级"
+    }
+  ]
 }
