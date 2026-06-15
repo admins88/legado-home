@@ -1,12 +1,12 @@
 {
-  "latest": "1.0.5",
+  "latest": "1.0.4001",
   "releases": [
     {
-      "version": "1.0.5",
-      "publishedAt": "2026-06-15T19:09:31.604Z",
-      "url": "https://admins88.github.io/legado-home/releases/1.0.5/update.zip",
-      "sigUrl": "https://admins88.github.io/legado-home/releases/1.0.5/update.zip.sig",
-      "changelog": "1) 书库分页改为每页10本；2) 书库同书名同作者自动去重并优先保留采集本地记录；3) 书库列表模板按参考图展示"
+      "version": "1.0.4001",
+      "publishedAt": "2026-06-15T19:26:06.523Z",
+      "url": "https://admins88.github.io/legado-home/releases/1.0.4001/update.zip",
+      "sigUrl": "https://admins88.github.io/legado-home/releases/1.0.4001/update.zip.sig",
+      "changelog": "书库分页改为每页10本；书库同书名同作者自动去重并优先保留采集本地记录；书库列表模板按参考图展示"
     },
     {
       "version": "1.0.2",
