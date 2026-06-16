@@ -1,6 +1,13 @@
 {
-  "latest": "1.0.4001",
+  "latest": "1.0.4002",
   "releases": [
+    {
+      "version": "1.0.4002",
+      "publishedAt": "2026-06-15T23:59:34.551Z",
+      "url": "https://admins88.github.io/legado-home/releases/1.0.4002/update.zip",
+      "sigUrl": "https://admins88.github.io/legado-home/releases/1.0.4002/update.zip.sig",
+      "changelog": "修复后台第三方统计代码含 script 时被网站防火墙拦截导致保存失败的问题"
+    },
     {
       "version": "1.0.4001",
       "publishedAt": "2026-06-15T19:26:06.523Z",
