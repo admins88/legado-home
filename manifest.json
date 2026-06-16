@@ -1,6 +1,20 @@
 {
-  "latest": "1.0.4002",
+  "latest": "1.0.4004",
   "releases": [
+    {
+      "version": "1.0.4004",
+      "publishedAt": "2026-06-16T00:29:09.150Z",
+      "url": "https://admins88.github.io/legado-home/releases/1.0.4004/update.zip",
+      "sigUrl": "https://admins88.github.io/legado-home/releases/1.0.4004/update.zip.sig",
+      "changelog": "淇鍚庡彴绗笁鏂圭粺璁′唬鐮佸惈 script 鏃惰缃戠珯闃茬伀澧欐嫤鎴鑷翠繚瀛樺け璐ョ殑闂"
+    },
+    {
+      "version": "1.0.4003",
+      "publishedAt": "2026-06-16T00:25:34.928Z",
+      "url": "https://admins88.github.io/legado-home/releases/1.0.4003/update.zip",
+      "sigUrl": "https://admins88.github.io/legado-home/releases/1.0.4003/update.zip.sig",
+      "changelog": "淇鍚庡彴绗笁鏂圭粺璁′唬鐮佸惈 script 鏃惰缃戠珯闃茬伀澧欐嫤鎴鑷翠繚瀛樺け璐ョ殑闂"
+    },
     {
       "version": "1.0.4002",
       "publishedAt": "2026-06-15T23:59:34.551Z",
