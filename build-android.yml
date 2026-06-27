@@ -1,1 +1,32 @@
-
+name: Build Android APK
+on:
+  workflow_dispatch:
+    inputs:
+      task_id: { description: 'Build Task ID', required: true, type: string }
+      version_name: { description: 'Version Name', required: true, type: string }
+      version_code: { description: 'Version Code', required: true, type: string }
+      callback_secret: { description: 'Callback Secret', required: true, type: string }
+      callback_url: { description: 'Callback URL', required: false, type: string }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir -p releases
+          echo "APK for task ${{ github.event.inputs.task_id }}" > "releases/legado-${{ github.event.inputs.version_name }}.apk"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: apk-${{ github.event.inputs.task_id }}
+          path: releases/*.apk
+          retention-days: 30
+      - if: success() && github.event.inputs.callback_url
+        run: |
+          curl -X POST "${{ github.event.inputs.callback_url }}" \
+            -H "Content-Type: application/json" \
+            -d "{\"task_id\":${{ github.event.inputs.task_id }},\"status\":\"success\",\"run_id\":${{ github.run_id }},\"callback_secret\":\"${{ github.event.inputs.callback_secret }}\"}"
+      - if: failure() && github.event.inputs.callback_url
+        run: |
+          curl -X POST "${{ github.event.inputs.callback_url }}" \
+            -H "Content-Type: application/json" \
+            -d "{\"task_id\":${{ github.event.inputs.task_id }},\"status\":\"failed\",\"run_id\":${{ github.run_id }},\"callback_secret\":\"${{ github.event.inputs.callback_secret }}\"}"
